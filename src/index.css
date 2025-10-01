@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+    @apply bg-white text-black; /* light mode default */
+}
+
+
+.dark body {
+    @apply bg-black text-white; /* dark mode */
+}

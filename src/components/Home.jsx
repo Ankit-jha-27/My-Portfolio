@@ -1,12 +1,14 @@
 import React from 'react'
 import ThemeToggle from './ThemeToggle'
+import Navbar from './Navbar'
+
 
 const Home = () => {
   return (
-    <div>
-      {/* Theme toggle */}
-      {/* Background Effect */}
+    <div className='min-h-screen'>
+      
       <ThemeToggle />
+      <Navbar />
     </div>
   )
 }
