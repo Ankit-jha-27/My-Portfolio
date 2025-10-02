@@ -1,6 +1,7 @@
 import React from 'react'
 import ThemeToggle from './ThemeToggle'
 import Navbar from './Navbar'
+import Stars from './Stars'
 
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
     <div className='min-h-screen'>
       
       <ThemeToggle />
+      <Stars />
       <Navbar />
+      
     </div>
   )
 }

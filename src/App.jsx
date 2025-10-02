@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 import Education from "./components/Education"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact";
-
+import Stars from "./components/Stars";
 
 const router = createBrowserRouter([
   {
