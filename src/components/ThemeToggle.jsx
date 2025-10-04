@@ -18,7 +18,7 @@ const [isDark, setDark] = useState(() => localStorage.getItem("theme") === "dark
     <div>
         <button 
             onClick={() => setDark(!isDark)}
-            className="fixed top-2 right-2 p-2 rounded-full bg-slate-900 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors duration-300 shadow-md z-50"
+            className="fixed top-7 right-4 p-2 rounded-full bg-slate-200 hover:bg-slate-300  dark:bg-slate-700 dark:hover:bg-slate-600 transition-colors duration-300 shadow-md z-50"
             >
             {isDark ? <Sun className='text-yellow-300'/> : <Moon className='text-blue-900'/>}
         </button>

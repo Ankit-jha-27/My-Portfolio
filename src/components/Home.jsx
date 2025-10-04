@@ -1,7 +1,9 @@
 import React from 'react'
 import ThemeToggle from './ThemeToggle'
 import Navbar from './Navbar'
+import HeroSection from './HeroSection'
 import Stars from './Stars'
+import About from './About'
 
 
 const Home = () => {
@@ -11,6 +13,11 @@ const Home = () => {
       <ThemeToggle />
       <Stars />
       <Navbar />
+
+      <main>
+        <HeroSection />
+        <About />  
+      </main>
       
     </div>
   )

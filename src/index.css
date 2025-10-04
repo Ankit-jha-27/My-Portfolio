@@ -21,3 +21,47 @@ body {
 .twinkle {
     animation: twinkle 2s infinite ease-in-out;
   }
+
+
+
+
+  /* Glowing text effect */
+.glow {
+  color: #eff1f5; /* Tailwind blue-400 color */
+  text-shadow: 0 0 8px #3b82f6, 0 0 16px #3b82f6, 0 0 24px #3b82f6;
+  animation: glow-pulse 2s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes glow-pulse {
+  0% {
+    text-shadow: 0 0 4px #3b82f6, 0 0 8px #3b82f6, 0 0 12px #3b82f6;
+  }
+  100% {
+    text-shadow: 0 0 8px #3b82f6, 0 0 16px #3b82f6, 0 0 24px #3b82f6;
+  }
+}
+
+/* Fade-in animation for spans */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-in-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.fade-in-delay-2 {
+  animation-delay: 1s;
+}
+
+.fade-in-delay-3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

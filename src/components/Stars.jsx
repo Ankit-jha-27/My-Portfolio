@@ -32,9 +32,7 @@ const Stars = () => {
       
       setStars(starArray);
     }
-
-  
-
+    
   return (
     <div className="fixed inset-0 w-full overflow-hidden pointer-events-none dark:block hidden">
       {stars.map((star, index) => (
