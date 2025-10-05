@@ -6,6 +6,8 @@ import Stars from './Stars'
 import About from './About'
 import Skills from './Skills'
 import Contact from './Contact'
+import Education from './Education'
+import Footer from './Footer'
 
 
 
@@ -20,9 +22,12 @@ const Home = () => {
       <main>
         <HeroSection />
         <About /> 
+        <Education />
         <Skills /> 
         <Contact />
       </main>
+
+      <Footer />
       
     </div>
   )

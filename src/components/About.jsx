@@ -30,12 +30,13 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
-            <button
-              id="#contact"
-              className="rounded-full font-bold px-5 py-2 bg-blue-500 text-white transition-all duration-200 hover:scale-105 hover:shadow-[0_0_12px_#3b82f6]"
-            >
+           
+          <a
+            href="#contact"
+            className="rounded-full font-bold px-5 py-2 bg-blue-500 text-white transition-all duration-200 hover:scale-105 hover:shadow-[0_0_12px_#3b82f6]"
+          >
               Reach Out
-            </button>
+          </a>
 
             <button className="rounded-full font-bold px-5 py-2 inline-flex items-center gap-2 border border-blue-500 text-blue-600 hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-all duration-200">
               Resume
@@ -46,32 +47,32 @@ const About = () => {
 
         {/* Right section */}
 <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4">
-  <div className="w-full  p-6 bg-gradient-to-r from-gray-800 via-purple-900 to-indigo-900 flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6 bg-slate-600 dark:bg-[#0a0a0a]  flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
-      <Monitor className="text-black" />
+      <Monitor className="text-white" />
     </div>
     <div className="text-left font-semibold">
-      <h4>Frontend Developer</h4>
+      <h4 className='font-bold'>Frontend Developer</h4>
       <p>Building responsive, user-friendly interfaces with modern frameworks.</p>
     </div>
   </div>
 
-  <div className="w-full  p-6 bg-gradient-to-r from-gray-800 via-purple-900 to-indigo-900 flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6  bg-slate-600 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
-      <Server className="text-black" />
+      <Server className="text-white" />
     </div>
     <div className="text-left font-semibold">
-      <h4>Backend Developer</h4>
+      <h4 className='font-bold'>Backend Developer</h4>
       <p>Developing robust server-side logic, APIs, and database management for applications.</p>
     </div>
   </div>
 
-  <div className="w-full  p-6 bg-gradient-to-r from-gray-800 via-purple-900 to-indigo-900 flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6  bg-slate-600 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
-      <Hexagon className="text-black" />
+      <Hexagon className="text-white" />
     </div>
     <div className="text-left font-semibold">
-      <h4>Blockchain Enthusiast</h4>
+      <h4 className='font-bold'>Blockchain Enthusiast</h4>
       <p>Designing decentralized, secure systems and smart contracts for modern applications.</p>
     </div>
   </div>
