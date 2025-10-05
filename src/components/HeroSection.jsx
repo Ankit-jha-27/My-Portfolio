@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download, Wrench } from 'lucide-react';
 
 const HeroSection = () => {
     const [isScrolled,setIsScrolled] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
-          setIsScrolled(window.scrollY > 30);
+          setIsScrolled(window.scrollY > 100);
         };
     
         window.addEventListener("scroll", handleScroll);
@@ -31,8 +31,9 @@ const HeroSection = () => {
           I specialize in building responsive, high-quality applications using Java, JavaScript, and React. 
           I am passionate about leveraging technology to create innovative and efficient solutions.
         </p>
-        <button className='fade-in fade-in-delay-3 rounded-full font-bold px-2 py-2 bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-200'>
-            Resume
+        <button id='' className='fade-in fade-in-delay-3 rounded-full font-bold px-2 py-2 bg-blue-500 text-white hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-colors duration-200  inline-flex items-center gap-2'>
+            See My Work
+            <Wrench size={20} className='' />
         </button>
       </div>
 

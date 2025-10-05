@@ -4,6 +4,9 @@ import Navbar from './Navbar'
 import HeroSection from './HeroSection'
 import Stars from './Stars'
 import About from './About'
+import Skills from './Skills'
+import Contact from './Contact'
+
 
 
 const Home = () => {
@@ -16,7 +19,9 @@ const Home = () => {
 
       <main>
         <HeroSection />
-        <About />  
+        <About /> 
+        <Skills /> 
+        <Contact />
       </main>
       
     </div>
