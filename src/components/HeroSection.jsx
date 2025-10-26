@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="container max-w-4xl mx-auto space-y-6 text-center z-10">
         
         <h1 className="text-4xl md:text-6xl font-bold">
-          <span className="fade-in fade-in-delay-1 inline-block mr-2">Hi bby, I'm</span>
+          <span className="fade-in fade-in-delay-1 inline-block mr-2">Hi, I'm</span>
           <span className="fade-in fade-in-delay-2 inline-block glow mr-2">Ankit</span>
           <span className="fade-in fade-in-delay-3 inline-block">Jha</span>
         </h1>
