@@ -31,10 +31,13 @@ const HeroSection = () => {
           I specialize in building responsive, high-quality applications using Java, JavaScript, and React. 
           I am passionate about leveraging technology to create innovative and efficient solutions.
         </p>
-        <button id='' className='fade-in fade-in-delay-3 rounded-full font-bold px-2 py-2 bg-blue-500 text-white hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-colors duration-200  inline-flex items-center gap-2'>
+        <a
+            href="#projects"
+            className="fade-in fade-in-delay-3 rounded-full font-bold px-4 py-2 bg-blue-500 text-white hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-colors duration-200 inline-flex items-center gap-2"
+        >
             See My Work
-            <Wrench size={20} className='' />
-        </button>
+            <Wrench size={20} />
+        </a>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-1 fade-in fade-in-delay-3">

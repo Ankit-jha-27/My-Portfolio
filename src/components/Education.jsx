@@ -25,7 +25,7 @@ const Education = () => {
     },
     {
       title: "Aim",
-      desc: "Web Developer",
+      desc: "Full-Stack and Data Analytics",
       img: aim,
     },
   ];
@@ -39,7 +39,7 @@ const Education = () => {
       {/* Timeline Container */}
       <div className="relative flex justify-center items-start">
         {/* Horizontal Line */}
-        <div className="absolute top-24 w-[85%] h-[2px] bg-gray-500"></div>
+        <div className="absolute top-24 w-[85%] h-[2px] bg-gray-800"></div>
 
         
         {items.map((item, index) => (
@@ -65,11 +65,11 @@ const Education = () => {
             )}
 
             
-            <div className="w-[2px] h-24 bg-gray-400"></div>
+            <div className="w-[2px] h-24 bg-gray-800"></div>
 
             
-            <div className="mt-4 text-white font-semibold">{item.title}</div>
-            <div className="text-gray-400 text-lg">{item.desc}</div>
+            <div className="mt-4 font-semibold">{item.title}</div>
+            <div className="text-lg">{item.desc}</div>
           </div>
         ))}
       </div>

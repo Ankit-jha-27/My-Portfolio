@@ -4,7 +4,7 @@
 
 
 body {
-    @apply bg-white text-black; /* light mode default */
+    @apply bg-gray-200 text-black; /* light mode default */
 }
 
 
@@ -25,18 +25,14 @@ body {
 
 
 
-  /* Glowing text effect */
+
 .glow {
   color: #eff1f5; /* Tailwind blue-400 color */
   text-shadow: 0 0 8px #3b82f6, 0 0 16px #3b82f6, 0 0 24px #3b82f6;
   animation: glow-pulse 2s infinite alternate;
 }
 
-.glow1 {
-  color: #99b1f8; /* Tailwind blue-400 color */
-  text-shadow: 0 0 8px #3b82f6, 0 0 16px #3b82f6, 0 0 24px #3b82f6;
-  
-}
+
 
 /* Glow animation */
 @keyframes glow-pulse {

@@ -1,5 +1,4 @@
 import Home from "./components/Home"
-import Error from "./components/Error"
 import About from "./components/About"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"

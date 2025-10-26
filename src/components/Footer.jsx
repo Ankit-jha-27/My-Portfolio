@@ -14,13 +14,13 @@ const Footer = () => {
             <FaGithub size={22} />
           </a>
           <a
-            href="https://linkedin.com/in/ankit-jha-27"
+            href="https://www.linkedin.com/in/ankit-jha-b926a8277/"
             className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-transform transform hover:scale-110"
           >
             <FaLinkedin size={22} />
           </a>
           <a
-            href="https://twitter.com/"
+            href="https://x.com/_Ankit_jha_09"
             className="text-gray-700 dark:text-gray-400 hover:text-black dark:hover:text-white transition-transform transform hover:scale-110"
           >
             <FaTwitter size={22} />

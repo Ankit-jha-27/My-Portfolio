@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download,Hexagon,Monitor,Server } from 'lucide-react';
+import { Download,TrendingUp,Monitor,Server } from 'lucide-react';
 
 const About = () => {
   return (
@@ -69,11 +69,11 @@ const About = () => {
 
   <div className="w-full  p-6  bg-slate-600 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
-      <Hexagon className="text-white" />
+      <TrendingUp className="text-white" />
     </div>
     <div className="text-left font-semibold">
-      <h4 className='font-bold'>Blockchain Enthusiast</h4>
-      <p>Designing decentralized, secure systems and smart contracts for modern applications.</p>
+      <h4 className='font-bold'>Aspiring Data Analyst</h4>
+      <p>Passionate about data-driven decisions.</p>
     </div>
   </div>
 </div>

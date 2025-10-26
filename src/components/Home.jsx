@@ -8,6 +8,7 @@ import Skills from './Skills'
 import Contact from './Contact'
 import Education from './Education'
 import Footer from './Footer'
+import Projects from './Projects'
 
 
 
@@ -23,7 +24,8 @@ const Home = () => {
         <HeroSection />
         <About /> 
         <Education />
-        <Skills /> 
+        <Skills />
+        <Projects /> 
         <Contact />
       </main>
 

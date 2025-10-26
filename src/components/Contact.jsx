@@ -1,10 +1,66 @@
-import React from 'react';
+import React, {useRef, useState } from 'react';
 import { Mail, MapPin, Phone,Send } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+
+
+  const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  
+  
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    emailjs.sendForm(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      form.current,  // form reference
+      PUBLIC_KEY
+    ).then(
+      (result) =>{
+        console.log(result);
+        setIsSent(true);
+        form.current.reset(); // reset form fields
+        toast.success('Message sent successfully!',{
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          draggable: true,
+          theme: "light",
+        })
+        setIsSending(false);
+      },
+      (error) => {
+        toast.error(`Failed to send message: ${error.text}`, {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          draggable: true,
+          theme: "light",
+        });
+        setIsSending(false);
+      }
+    )
+   
+  }
+
   return (
-    <section id="contact" className="py-24 px-4">
+    
+    <>
+      <ToastContainer />
+      <section id="contact" className="py-24 px-4">
       <div className="container max-w-5xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold glow">
           <span className="glow">Reach Me</span>
@@ -15,7 +71,7 @@ const Contact = () => {
           I'm always open to discussing new opportunities.
         </p>
 
-        {/* Main Flex Container */}
+        {/* Main Container */}
         <div className="mt-12 max-w-5xl mx-auto flex flex-col md:flex-row items-stretch gap-8 md:gap-12">
           
           {/* Left Part */}
@@ -93,36 +149,34 @@ const Contact = () => {
           <div className="w-full md:w-1/2 flex flex-col justify-center p-6 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-center md:text-left">Send a Message</h3>
 
-            <form className="flex flex-col gap-4 w-full">
-              {/* Name */}
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 w-full">
+              
               <div className="flex flex-col items-start w-full">
                 <label htmlFor="name" className="text-sm font-medium mb-1">Your Name</label>
                 <input
                   type="text"
-                  id="name"
+                  name="name"
                   required
                   placeholder="Enter your name"
                   className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
-              {/* Email */}
               <div className="flex flex-col items-start w-full">
                 <label htmlFor="email" className="text-sm font-medium mb-1">Your Email</label>
                 <input
                   type="email"
-                  id="email"
+                  name="email"
                   required
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-slate-700 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
-              {/* Message */}
               <div className="flex flex-col items-start w-full">
                 <label htmlFor="message" className="text-sm font-medium mb-1">Your Message</label>
                 <textarea
-                  id="message"
+                  name="message"
                   rows="3"
                   required
                   placeholder="Write your message..."
@@ -130,19 +184,21 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              {/* Submit Button */}
               <button
                 type="submit"
+                disabled={isSending}
                 className="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-md transition duration-200 glow flex items-center justify-center gap-2"
               >
-                Send Message
+                {isSending ? "Sending..." : "Send Message"}
                 <Send size={20}/>
               </button>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
+    </>
+    
   );
 };
 
