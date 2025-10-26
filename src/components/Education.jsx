@@ -19,8 +19,7 @@ const Education = () => {
 
       {/* Timeline Container */}
       <div className="relative flex flex-wrap justify-center items-start gap-x-6 gap-y-12 md:gap-x-12">
-        {/* Horizontal Line (adjust height and position for small screens) */}
-        <div className="absolute top-24 left-0 right-0 h-[2px] bg-gray-800 z-0"></div>
+        
 
         {items.map((item, index) => (
           <div
