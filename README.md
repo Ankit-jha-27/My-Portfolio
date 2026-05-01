@@ -57,6 +57,7 @@ portfolio/
 
 ### 1. Clone the repository
 git clone https://github.com/Ankit-jha-27/My-Portfolio.git
+
 cd folder_name
 
 ### 2. Install dependencies
