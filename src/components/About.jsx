@@ -38,10 +38,14 @@ const About = () => {
               Reach Out
           </a>
 
-            <button className="rounded-full font-bold px-5 py-2 inline-flex items-center gap-2 border border-blue-500 text-blue-600 hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-all duration-200">
-              Resume
-              <Download size={20} />
-            </button>
+          <a
+          href="/Resume_Ankit_Jha.pdf"
+          download="Resume_Ankit_Jha.pdf"
+          className="rounded-full font-bold px-5 py-2 inline-flex items-center gap-2 border border-blue-500 text-blue-600 hover:scale-105 hover:shadow-[0_0_12px_#3b82f6] transition-all duration-200"
+          >
+          Resume
+          <Download size={20} />
+          </a>
           </div>
         </div>
 
