@@ -3,6 +3,7 @@ import noteSaver from "../assets/noteSaver.jpg.png";
 import stone from "../assets/stone.jpg.png";
 import passGen from "../assets/passGen.jpg.png";
 import tictak from "../assets/tictak.jpg.png";
+import electricity from "../assets/electricityBilling.jpg.png";
 import { Code } from 'lucide-react';
 
 const projs = [
@@ -38,6 +39,14 @@ const projs = [
     tags: ["HTML", "CSS", "JS"],
     git: "https://github.com/Ankit-jha-27/Stone-Paper-Scissors-Game.git"
   },
+  {
+    id: 5,
+    title: "PowerBill",
+    description: "Electricity billing system that streamlines bill generation, customer management, and payment tracking.Interface for both users and administrators to efficiently manage electricity consumption data.",
+    image: electricity,
+    tags: ["MERN STACK"],
+    git: "https://github.com/Ankit-jha-27/Electricity-Billing-System.git"  
+  }
 ];
 
 const Projects = () => {

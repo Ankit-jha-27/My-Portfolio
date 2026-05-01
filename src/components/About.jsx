@@ -51,7 +51,7 @@ const About = () => {
 
         {/* Right section */}
 <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-4">
-  <div className="w-full  p-6 bg-slate-600 dark:bg-[#0a0a0a]  flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6 bg-slate-400 dark:bg-[#0a0a0a]  flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
       <Monitor className="text-white" />
     </div>
@@ -61,7 +61,7 @@ const About = () => {
     </div>
   </div>
 
-  <div className="w-full  p-6  bg-slate-600 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6  bg-slate-400 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
       <Server className="text-white" />
     </div>
@@ -71,7 +71,7 @@ const About = () => {
     </div>
   </div>
 
-  <div className="w-full  p-6  bg-slate-600 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
+  <div className="w-full  p-6  bg-slate-400 dark:bg-[#0a0a0a] flex gap-4  hover:scale-105 hover:shadow-2xl">
     <div className="rounded-full p-3">
       <TrendingUp className="text-white" />
     </div>
