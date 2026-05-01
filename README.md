@@ -29,15 +29,28 @@ A modern, responsive personal portfolio website to showcase my projects, skills,
 ---
 
 ## 📁 Project Structure
+```
 portfolio/
 ├── public/
 │   └── Resume_Ankit.pdf
 ├── src/
 │   ├── assets/
+│   │   ├── noteSaver.png
+│   │   ├── passGen.png
+│   │   ├── tictak.png
+│   │   ├── stone.png
+│   │   └── electricity.png
 │   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Projects.jsx
+│   │   └── ...
 │   ├── App.jsx
 │   └── main.jsx
-
+├── index.html
+├── package.json
+└── vite.config.js
+```
 ---
 
 ## ⚙️ Setup & Installation
