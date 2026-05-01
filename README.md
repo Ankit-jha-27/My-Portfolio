@@ -1,12 +1,84 @@
-# React + Vite
+# 💼 Personal Portfolio – Ankit Jha
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website to showcase my projects, skills, and contact details. Built with a focus on clean design, performance, and user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 https://your-portfolio-link.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- React.js  
+- Tailwind CSS  
+- Vite  
+- EmailJS  
+- Lucide React & React Icons  
+
+---
+
+## ✨ Features
+- 📱 Fully responsive (mobile + desktop)  
+- 🎨 Clean UI with smooth hover effects  
+- 📂 Projects section with GitHub links  
+- 📄 Resume download option  
+- 📬 Contact form (EmailJS integration)  
+- 🌙 Dark mode support  
+
+---
+
+## 📁 Project Structure
+portfolio/
+├── public/
+│   └── Resume_Ankit.pdf
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the repository
+git clone https://github.com/Ankit-jha-27/My-Portfolio.git
+cd folder_name
+
+### 2. Install dependencies
+npm install
+
+### 3. Create `.env` file
+
+
+### 4. Run the project
+npm run dev
+
+---
+
+## 🌐 Deployment
+This project is deployed on Vercel.  
+Make sure to add environment variables in the Vercel dashboard before deploying.
+
+---
+
+## 📬 Contact
+- 📧 Email: jhaankitjha03@gmail.com  
+- 💼 LinkedIn: https://www.linkedin.com/in/ankit-jha-b926a8277/ 
+- 🐙 GitHub: https://github.com/Ankit-jha-27  
+
+---
+
+## ⭐ Support
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
+
+## 📌 Future Improvements
+- Add blog section  
+- Improve animations  
+- Backend integration for contact form  
+- Add analytics  
+
+---
